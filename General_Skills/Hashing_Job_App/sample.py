@@ -1,5 +1,7 @@
 import socket
 import hashlib
+import argparse
+
 
 def extract_and_md5_hash(received_string):
     # Find the substring between the quotes
@@ -50,6 +52,10 @@ def connect_to_nc_server_and_process(host, port):
 # Example usage
 host = "saturn.picoctf.net"  # Replace with the actual host
 port = 49515                 # Replace with the actual port
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument()
 
 # Connect to the Netcat server and process the received data
 connect_to_nc_server_and_process(host, port)
